@@ -1,0 +1,46 @@
+[
+  {
+    "Fund Type": "Pension Fund",
+    "Name": "Aegon Stability Fund (AOR)",
+    "Group Name": "Aegon/Scottish Equitable plc",
+    "Sector": "PN Specialist",
+    "Asset Class": "Mixed Asset",
+    "Price currency": "GBP",
+    "Domicile": "United Kingdom",
+    "ISIN": "GB00BRYG9Y90",
+    "Fund Launch": "11/12/2014"
+  },
+  {
+    "Fund Type": "Pension Fund",
+    "Name": "AEGON FULCRUM CORE ABSOLUTE RETURN PN",
+    "Group Name": "Aegon/Scottish Equitable plc",
+    "Sector": "PN Specialist",
+    "Asset Class": "Mixed Asset",
+    "Price currency": "GBP",
+    "Domicile": "United Kingdom",
+    "ISIN": "GB00BDJ00342",
+    "Fund Launch": "01/09/1998"
+  },
+  {
+    "Fund Type": "Pension Fund",
+    "Name": "AEGON AM UK ABSOLUTE RETURN PN",
+    "Group Name": "Aegon/Scottish Equitable plc",
+    "Sector": "PN Specialist",
+    "Asset Class": "Equity",
+    "Price currency": "GBP",
+    "Domicile": "United Kingdom",
+    "ISIN": "GB00BDJ00565",
+    "Fund Launch": "01/09/1998"
+  },
+  {
+    "Fund Type": "Pension Fund",
+    "Name": "Aegon BNY Mellon Global Dynamic Bond Pn",
+    "Group Name": "Aegon/Scottish Equitable plc",
+    "Sector": "PN Global Fixed Interest",
+    "Asset Class": "Fixed Interest",
+    "Price currency": "GBP",
+    "Domicile": "United Kingdom",
+    "ISIN": "GB00BDJ00672",
+    "Fund Launch": "01/06/1987"
+  }
+]

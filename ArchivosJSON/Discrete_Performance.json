@@ -1,0 +1,20 @@
+[
+  {
+    "Fund": "Aegon Stability Pn AOR",
+    "Benchmark": "PN Specialist",
+    "0 - 12 m": 4.1,
+    "12 - 24 m": 5.1,
+    "24 - 36 m": 0,
+    "36 - 48 m": -0.7,
+    "48 - 60 m": 1
+  },
+  {
+    "Fund": "PN Specialist",
+    "Benchmark": "",
+    "0 - 12 m": 12,
+    "12 - 24 m": 1.1,
+    "24 - 36 m": 1.7,
+    "36 - 48 m": 3.1,
+    "48 - 60 m": 14.9
+  }
+]
