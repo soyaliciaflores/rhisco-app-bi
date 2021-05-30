@@ -31,7 +31,7 @@ const Return = () => {
       .then(response =>{
         var respuesta = response.data;
         var auxDiffrenece = [], auxDate = [];
-        respuesta.map(elemento =>{
+        respuesta.map(elemento => {
           auxDiffrenece.push(elemento.Diffrenece);
           auxDate.push(elemento.Date);
         })
