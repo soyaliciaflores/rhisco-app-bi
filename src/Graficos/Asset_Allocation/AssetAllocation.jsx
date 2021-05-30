@@ -4,38 +4,33 @@ import axios from 'axios'
 
 const AssetAllocation = () => {
 
-    const [foundType,SetfoundType] = useState()
-    const [netAssets, SetnetAssets] = useState()
-    console.log(foundType, netAssets);
+    const [foundType,SetfoundType] = useState();
+    const [netAssets, SetnetAssets] = useState();
+    const [assetsAlocationData, SetassetsAlocationData] = useState();
+    console.log(foundType, netAssets, assetsAlocationData);
 
     const data = {
       
       labels: foundType,
       datasets: [{
-        label: 'My First Dataset',
+        label: 'Asset Allocation',
         data: netAssets,
         backgroundColor: [
-          'rgb(255, 99, 132)',
-          'rgb(54, 162, 235)',
-          'rgb(255, 205, 86)'
+          'rgb(0, 20, 20)',
+          'rgb(0,41,41)',
+          'rgb(0, 61, 61)',
+          'rgb(0,82,82)',
+          'rgb(142, 176, 176)',
+          'rgb()'
         ],
-        hoverOffset: 4
+
       }]
     };
     const options ={
       maintainAspectRadio: false,
+      responsive: true
     }
 
-    // const data = {
-    //   labels: [foundType],
-    //   dataSets:[{
-    //     label:"Assets Allocation",
-    //     data: [netAssets],
-    //     BackgroundColor: "004E4E",
-    //     borderWidth: 1,
-    //   }]      
-    // }
-     
     const getData = async () =>{
         await axios.get('https://rhisco-89b36-default-rtdb.firebaseio.com/.json')
         .then(response =>{
@@ -50,6 +45,7 @@ const AssetAllocation = () => {
           })
           SetfoundType(foundType)
           SetnetAssets(netAssets)
+          SetassetsAlocationData(res)
         })
     }
       useEffect(()=>{
@@ -59,7 +55,7 @@ const AssetAllocation = () => {
     return ( 
 
         <Fragment>
-          <div>
+          <div className='graphic'>
             <Pie 
               data = {data}
               options = {options}
