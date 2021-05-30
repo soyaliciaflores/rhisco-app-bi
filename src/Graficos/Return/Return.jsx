@@ -1,5 +1,5 @@
+/* eslint-disable array-callback-return */
 import React, {Fragment, useState, useEffect} from 'react';
-import dbreturn from '../../ArchivosJSON/Return.json'
 import { Line } from 'react-chartjs-2'
 import axios from 'axios'
 
