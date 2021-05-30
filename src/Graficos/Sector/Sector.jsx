@@ -15,12 +15,15 @@ const Sector = () => {
         label: 'Asset netAssets',
         data: netAssets,
         backgroundColor: [
-          'rgb(0, 8, 20)',
-          'rgb(0,24,61)',
-          'rgb(0, 41, 102)',
-          'rgb(0,57,143)',
-          'rgb(0, 73, 184)',
-          'rgb(0, 90, 224)'
+          '#EF5D02',
+          '#F16C19',
+          '#F27B30',
+          '#F48A48',
+          '#F5995F',
+          '#F7A776',
+          '#F8B68D',
+          '#FAC5A5',
+          '#FBD4BC'
         ],
 
       }]
