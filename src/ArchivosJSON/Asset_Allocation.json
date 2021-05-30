@@ -1,27 +1,44 @@
 [
   {
     "Fund": "Aegon Stability Fund (AOR) Pension Fund",
-    "Region": "Developed Country",
-    "Allocation": 0.0053
+    "Type": "Cash",
+    "Netassets": 0.2425,
+    "Short": 1.4181,
+    "Long": 1.6606
   },
   {
     "Fund": "Aegon Stability Fund (AOR) Pension Fund",
-    "Region": "United States",
-    "Allocation": 0.0045
+    "Type": "Non-UK bond",
+    "Netassets": 0.3076,
+    "Short": 0.0265,
+    "Long": 0.3341
   },
   {
     "Fund": "Aegon Stability Fund (AOR) Pension Fund",
-    "Region": "United Kingdom",
-    "Allocation": 0.0005
+    "Type": "UK bond",
+    "Netassets": 0.0229,
+    "Short": 0,
+    "Long": 0.0229
   },
   {
     "Fund": "Aegon Stability Fund (AOR) Pension Fund",
-    "Region": "Middle East",
-    "Allocation": 0.0002
+    "Type": "Non-UK stock",
+    "Netassets": 0.001,
+    "Short": 0.0051,
+    "Long": 0.0061
   },
   {
     "Fund": "Aegon Stability Fund (AOR) Pension Fund",
-    "Region": "Emerging Market",
-    "Allocation": 0.0001
+    "Type": "UK stock",
+    "Netassets": 0.0005,
+    "% Short": 0,
+    "% Long": 0.0005
+  },
+  {
+    "Fund": "Aegon Stability Fund (AOR) Pension Fund",
+    "Type": "Other",
+    "Netassets": 0.4256,
+    "% Short": 0.001,
+    "% Long": 0.4266
   }
 ]
