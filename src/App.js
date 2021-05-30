@@ -1,5 +1,6 @@
 import React from 'react';
 import Return from './Graficos/Return/Return';
+import FilterReturn from './Graficos/Return/FilterReturn'
 
 
 function App() {
@@ -7,7 +8,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Rhisco</h1>
-        <Return/>
+        <FilterReturn/>
+        
+       
       </header>
     </div>
   );
