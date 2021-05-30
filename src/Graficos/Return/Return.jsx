@@ -11,16 +11,12 @@ const Return = (props) => {
       labels: props.lafecha,
       datasets:[{ 
         label: "Diference",
-      BackgroundColor: "#FFF000",
-      borderColor: "blue",
-      borderWidth: 1,
-      hoverBackgroundColor: "rgba(255,0,0,2)",
-      hoverBorderColor: "#FFF000",
+      borderColor: "#E46C0A",
+      borderWidth: 5,
       data: props.ladiferencia
     }]
     }
     const opciones ={
-      maintainAspectRadio: false,
       responsive: true
     }
   
@@ -44,9 +40,13 @@ const Return = (props) => {
   
     return ( 
       <Fragment>
-              <div className="App" style={{width:"45%", height: "500px"}}>
+        <div className='general-container'>
+        <div className="App" style={{width:"60%"}}>
+          
               <Line data={data} options={opciones} />
               </div>
+        </div>
+              
           </Fragment>
        );
 }
