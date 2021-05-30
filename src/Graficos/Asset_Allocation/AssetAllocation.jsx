@@ -10,7 +10,6 @@ const AssetAllocation = () => {
     console.log(foundType, netAssets, assetsAlocationData);
 
     const data = {
-      
       labels: foundType,
       datasets: [{
         label: 'Asset Allocation',
