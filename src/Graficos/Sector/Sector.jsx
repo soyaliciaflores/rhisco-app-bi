@@ -10,7 +10,7 @@ const Sector = () => {
     console.log(sector,netAssets,sectorData);
 
     const data = {
-      labels: sector,
+      labels:sector,
       datasets: [{
         label: 'Asset netAssets',
         data: netAssets,
