@@ -3,27 +3,27 @@
     "Fund": "Aegon Stability Fund (AOR) Pension Fund",
     "Company": "Aegon/Fulcrum Core Absolute Return Pen",
     "ISIN": "GB00BDJ00342",
-    "1 year change": "--",
-    "Portfolio weight": 0.3378,
-    "Long allocation": "",
+    "oneYearChange": "--",
+    "portfolioWeight": 0.3378,
+    "longAllocation": "",
     "": ""
   },
   {
     "Fund": "Aegon Stability Fund (AOR) Pension Fund",
     "Company": "Aegon/Kames UK Eq Abs Return Pen",
     "ISIN": "GB00BDJ00565",
-    "1 year change": "--",
-    "Portfolio weight": 0.3363,
-    "Long allocation": "",
+    "oneYearChange": "--",
+    "portfolioWeight": 0.3363,
+    "longAllocation": "",
     "": ""
   },
   {
     "Fund": "Aegon Stability Fund (AOR) Pension Fund",
     "Company": "Aegon BNY Mellon Global Dynamic Bond Pn",
     "ISIN": "GB00BDJ00672",
-    "1 year change": "--",
-    "Portfolio weight": 0.3259,
-    "Long allocation": "",
+    "oneYearChange": "--",
+    "portfolioWeight": 0.3259,
+    "longAllocation": "",
     "": ""
   }
 ]
