@@ -1,4 +1,3 @@
-
 import './App.css';
 import './Graficos/Asset_Allocation/AssetAllocation.css'
 import React from 'react';
@@ -7,6 +6,7 @@ import DiscretePerformance from './Graficos/Discrete_Performance/DiscretePerform
 import Regions from './Graficos/Regions/Regions';
 import HistoricalPrice from './Graficos/Historical_Price/HistoricalPrice'
 import Return from './Graficos/Return/Return';
+import Sector from './Graficos/Sector/Sector';
 
 function App() {
   
@@ -14,11 +14,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Rhisco</h1>
+          <Sector />
           <DiscretePerformance />
           <Regions />
           <AssetAllocation />
-        <HistoricalPrice/>
-        <Return/>
+          <HistoricalPrice/>
+          <Return/>
       </header>
     </div>
   );
