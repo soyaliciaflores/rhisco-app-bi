@@ -1,36 +1,30 @@
 import React, {Fragment, useState, useEffect} from 'react';
-import dbreturn from '../../ArchivosJSON/Return.json'
 import { Line } from 'react-chartjs-2'
 import axios from 'axios'
+// import FilterReturn from './FilterReturn';
 
-const Return = () => {
+const Return = (props) => {
     const [Diffrenece, setDiffrenece] = useState([]);
     const [Date, setDate] = useState([]);
-  
     
     const data = {
-      labels: Date,
-      
+      labels: props.lafecha,
       datasets:[{ 
         label: "Diference",
-      BackgroundColor: "#FFF000",
-      borderColor: "blue",
-      borderWidth: 1,
-      hoverBackgroundColor: "rgba(255,0,0,2)",
-      hoverBorderColor: "#FFF000",
-      data: Diffrenece
+      borderColor: "#E46C0A",
+      borderWidth: 5,
+      data: props.ladiferencia
     }]
     }
     const opciones ={
-      maintainAspectRadio: false,
       responsive: true
     }
   
     const peticionApi = async () =>{
       await axios.get('https://rhisco-89b36-default-rtdb-b52e2.firebaseio.com/.json')
       .then(response =>{
-        var respuesta = response.data;
-        var auxDiffrenece = [], auxDate = [];
+        const respuesta = response.data;
+        const auxDiffrenece = [], auxDate = [];
         respuesta.map(elemento =>{
           auxDiffrenece.push(elemento.Diffrenece);
           auxDate.push(elemento.Date);
@@ -45,12 +39,14 @@ const Return = () => {
     },[])
   
     return ( 
-          <Fragment>
-              <h2>Return</h2>
-              <div className="App" style={{width:"45%", height: "500px"}}>
+      <Fragment>
+        <div className='general-container'>
+        <div className="App" style={{width:"60%"}}>
+          
               <Line data={data} options={opciones} />
               </div>
-             
+        </div>
+              
           </Fragment>
        );
 }
