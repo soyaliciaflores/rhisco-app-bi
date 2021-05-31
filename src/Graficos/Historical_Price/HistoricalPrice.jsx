@@ -50,8 +50,6 @@ const HistoricalPrice = () => {
         await axios.get(api)
             .then(res => {
                 setData(res.data)
-
-
             })
     }
     useEffect(() => {
