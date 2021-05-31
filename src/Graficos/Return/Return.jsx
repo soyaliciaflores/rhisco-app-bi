@@ -14,11 +14,15 @@ const Return = (props) => {
       borderColor: "#E46C0A",
       borderWidth: 5,
       data: props.ladiferencia
+      
     }]
     }
     const opciones ={
-      responsive: true
-    }
+      responsive: true,
+      animations: false
+        }
+
+           
   
     const peticionApi = async () =>{
       await axios.get('https://rhisco-89b36-default-rtdb-b52e2.firebaseio.com/.json')
