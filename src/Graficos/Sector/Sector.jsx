@@ -55,7 +55,6 @@ const Sector = () => {
       },[])
 
     return ( 
-
         <Fragment>
           <div className='graphic'>
             <Pie 
@@ -67,4 +66,4 @@ const Sector = () => {
     );
 }
  
-export default Sector;
+export default Sectors;
