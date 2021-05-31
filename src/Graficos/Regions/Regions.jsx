@@ -4,17 +4,17 @@ import axios from 'axios'
 
 const Regions = () => {
 
-    const [regions,Setregions] = useState();
-    const [allocation, Setallocation] = useState();
-    const [regionsData, SetregionsData] = useState();
+    const [region,Setregions] = useState([]);
+    const [allocations, Setallocation] = useState([]);
+    const [regionsData, SetregionsData] = useState([]);
 
-    console.log(regions,allocation,regionsData);
+    console.log(region,allocations,regionsData);
 
     const data = {
-      labels: regions,
+      labels: region,
       datasets: [{
         label: 'Asset Allocation',
-        data: allocation,
+        data: allocations,
         backgroundColor: [
           'rgb(0, 8, 20)',
           'rgb(0,24,61)',

@@ -3,17 +3,17 @@ import { Pie } from 'react-chartjs-2'
 import axios from 'axios'
 
 const Sector = () => {
-    const [sector,Setsector] = useState();
-    const [netAssets, SetnetAssets] = useState();
-    const [sectorData, SetsectorData] = useState();
+    const [sectors,Setsector] = useState([]);
+    const [netAsset, SetnetAssets] = useState([]);
+    const [sectorData, SetsectorData] = useState([]);
 
-    console.log(sector,netAssets,sectorData);
+    console.log(sectors,netAsset,sectorData);
 
     const data = {
-      labels: sector,
+      labels: sectors,
       datasets: [{
         label: 'Asset netAssets',
-        data: netAssets,
+        data: netAsset,
         backgroundColor: [
           '#EF5D02',
           '#F16C19',

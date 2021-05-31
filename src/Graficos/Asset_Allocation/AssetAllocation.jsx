@@ -4,16 +4,16 @@ import axios from 'axios'
 
 const AssetAllocation = () => {
 
-    const [foundType,SetfoundType] = useState();
-    const [netAssets, SetnetAssets] = useState();
-    const [assetsAlocationData, SetassetsAlocationData] = useState();
-    console.log(foundType, netAssets, assetsAlocationData);
-
+    const [found,SetfoundType] = useState([]);
+    const [netAsset, SetnetAssets] = useState([]);
+    const [assetsAlocationData, SetassetsAlocationData] = useState([]);
+    console.log(found, netAsset, assetsAlocationData);
+    
     const data = {
-      labels: foundType,
+      labels: found,
       datasets: [{
         label: 'Asset Allocation',
-        data: netAssets,
+        data: netAsset,
         backgroundColor: [
           'rgb(0, 20, 20)',
           'rgb(0,41,41)',

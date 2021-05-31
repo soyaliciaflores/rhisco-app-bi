@@ -5,10 +5,10 @@ import axios from 'axios'
 
 const DiscretePerformance = () => {
 
-    const [Aegon,SetAegon] = useState();
-    const [PNSpecialis, SetPNSpecialis] = useState();
-    const [DPData, SetDPData] = useState();
-    const [Benchmark,SetBenchmark] = useState();
+    const [Aegon,SetAegon] = useState([]);
+    const [PNSpecialis, SetPNSpecialis] = useState([]);
+    const [DPData, SetDPData] = useState([]);
+    const [Benchmark,SetBenchmark] = useState([]);
 
     console.log(DPData)
     console.log(Aegon)
