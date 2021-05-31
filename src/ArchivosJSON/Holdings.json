@@ -5,8 +5,7 @@
     "ISIN": "GB00BDJ00342",
     "oneYearChange": "--",
     "portfolioWeight": 0.3378,
-    "longAllocation": "",
-    "": ""
+    "longAllocation": ""
   },
   {
     "Fund": "Aegon Stability Fund (AOR) Pension Fund",
@@ -14,8 +13,7 @@
     "ISIN": "GB00BDJ00565",
     "oneYearChange": "--",
     "portfolioWeight": 0.3363,
-    "longAllocation": "",
-    "": ""
+    "longAllocation": ""
   },
   {
     "Fund": "Aegon Stability Fund (AOR) Pension Fund",
@@ -23,7 +21,6 @@
     "ISIN": "GB00BDJ00672",
     "oneYearChange": "--",
     "portfolioWeight": 0.3259,
-    "longAllocation": "",
-    "": ""
+    "longAllocation": ""
   }
 ]

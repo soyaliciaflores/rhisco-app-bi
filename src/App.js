@@ -1,22 +1,41 @@
+import React, { Fragment } from 'react';
+import AppAnalista from './AppAnalista';
+import AppDirectivo from './AppDirectivo';
 import './App.css';
+import './Graficos/Return/FilterReturn.css'
+import './General/Navigation/NavGraph.css'
+import './General/Navigation/NavTable.css'
 import './Graficos/Sector/Sector.css';
-import React from 'react';
-import Holdings from './Graficos/Holdings/Holdings'
-import HeaderDirectivo from './General/Header_Directivo/HeaderDirectivo'
-import HeaderAnalista from './General/Header_Analista/HeaderAnalitic'
-import Sectors from './Graficos/Sector/Sector';
+import './Graficos/Asset_Allocation/AssetAllocation.css'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 function App() {
   
   return (
-    <div className="App">
-        
-        <HeaderDirectivo></HeaderDirectivo>
-        <Sectors></Sectors>
-        <Holdings></Holdings>
-        <HeaderAnalista></HeaderAnalista>
-      
-    </div>
+    <Fragment>
+      <Router>
+        <Link to = '/analista'>
+        <button>Analista</button>
+        </Link>
+        <Link to = '/directivo'>
+        <button>Directivo</button>
+        </Link>
+        <Switch>
+          <Route path = '/directivo'>
+            <AppDirectivo/>
+          </Route>
+          <Route path = '/analista'>
+            <AppAnalista/>
+          </Route>
+        </Switch>
+      </Router>
+    </Fragment>
   );
 }
 
