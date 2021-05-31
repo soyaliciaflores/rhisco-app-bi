@@ -1,8 +1,8 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios'
 import DataTable from 'react-data-table-component'
+import GraphicFilter from './GraphicFilter'
 import Graphics from './Graphics'
-
 
 
 const columnas = [
@@ -25,7 +25,7 @@ const columnas = [
     {
         name: 'High',
         selector: 'High',
-    
+
     },
     {
         name: 'Low',
@@ -68,8 +68,8 @@ const HistoricalPrice = () => {
                 title='Historical Prices'
                 pagination
             />
-
-            <Graphics/>
+            <Graphics />
+            <GraphicFilter />
         </Fragment>
     );
 }
