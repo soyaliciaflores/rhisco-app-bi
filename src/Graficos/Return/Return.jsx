@@ -33,6 +33,7 @@ const Return = (props) => {
         respuesta.map(elemento => {
           auxDiffrenece.push(elemento.Diffrenece);
           auxDate.push(elemento.Date);
+          return 'difference data'
         })
         setDiffrenece(auxDiffrenece);
         setDate(auxDate);

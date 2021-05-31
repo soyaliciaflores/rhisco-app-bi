@@ -25,7 +25,6 @@ const GraphicFilter = () => {
     const [close, setClose] = useState([]);
     const [year, setYear] = useState('');
     const [historicalData, sethistoricalData] = useState();
-   
 
     const data = {
         labels: date,
@@ -38,17 +37,11 @@ const GraphicFilter = () => {
         }]
     };
 
-
-
-
-
     const peticionApi = async () => {
         await axios.get(api)
             .then(res => {
                 let answer = res.data
-                sethistoricalData(answer)
-
-            
+                sethistoricalData(answer)            
             })
     }
     useEffect(() => {
@@ -57,8 +50,6 @@ const GraphicFilter = () => {
 
     const prueba = (datos, año) => {
 
-        console.log();
-
         let auxDate = [];
         let auxClose = [];
         const filtrado = datos.filter(date => date.Date.includes(año))
@@ -66,7 +57,7 @@ const GraphicFilter = () => {
 
             auxDate.push(item.Date)
             auxClose.push(item.Close)
-
+            return 'filter by year'
         })
 
         setDate(auxDate);
@@ -76,8 +67,8 @@ const GraphicFilter = () => {
         const opcion = e.target.value
         setYear(opcion)
         prueba(historicalData,year)
-
     }
+
     return (
         <Fragment>
             <select name="categorias"
@@ -86,27 +77,11 @@ const GraphicFilter = () => {
                 <option> Seleccione un año</option>
                 {
                     options.map((item, i) => (
-
                         <option key={'categoria' + i}>{item.years}</option>
-
-
-
-
                     ))
                 }
-
-
-
-
-
             </select>
-
-
-
             <Line data={data} />
-
-
-
         </Fragment>
     )
 }
