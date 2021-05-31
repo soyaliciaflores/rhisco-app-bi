@@ -1,7 +1,7 @@
+/* eslint-disable array-callback-return */
 import React, {Fragment, useState, useEffect} from 'react';
 import { Line } from 'react-chartjs-2'
 import axios from 'axios'
-// import FilterReturn from './FilterReturn';
 
 const Return = (props) => {
     const [Diffrenece, setDiffrenece] = useState([]);
@@ -20,9 +20,7 @@ const Return = (props) => {
     const opciones ={
       responsive: true,
       animations: false
-        }
-
-           
+    }       
   
     const peticionApi = async () =>{
       await axios.get('https://rhisco-89b36-default-rtdb-b52e2.firebaseio.com/.json')
