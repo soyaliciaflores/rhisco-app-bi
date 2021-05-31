@@ -1,21 +1,23 @@
 import './App.css';
-import './Graficos/Sector/Sector.css';
 import React from 'react';
-import Holdings from './Graficos/Holdings/Holdings'
-
+import AssetAllocation from './Graficos/Asset_Allocation/AssetAllocation';
+import HistoricalPrice from './Graficos/Historical_Price/HistoricalPrice';
+import Holdings from './Graficos/Holdings/Holdings';
+import Return from './Graficos/Return/Return';
 import Sectors from './Graficos/Sector/Sector';
+import './Graficos/Return/Return.css';
+import './Graficos/Return/FilterReturn.css';
+import './Graficos/Sector/Sector.css';
 
 function App() {
   
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Rhisco</h1>
-        
-        <Sectors></Sectors>
-        <Holdings></Holdings>
-        
-      </header>
+        <Sectors/>
+        <Holdings/>
+        <AssetAllocation />
+        <HistoricalPrice/>
+        <Return/>
     </div>
   );
 }
