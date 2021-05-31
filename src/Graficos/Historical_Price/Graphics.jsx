@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios'
 import { Line } from 'react-chartjs-2'
@@ -50,3 +51,4 @@ const Graphics = () => {
     )
 }
 export default Graphics;
+

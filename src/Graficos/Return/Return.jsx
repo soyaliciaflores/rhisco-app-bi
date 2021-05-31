@@ -6,6 +6,7 @@ import axios from 'axios'
 const Return = (props) => {
     const [Diffrenece, setDiffrenece] = useState([]);
     const [Date, setDate] = useState([]);
+    console.log(Date, Diffrenece)
     
     const data = {
       labels: props.lafecha,
@@ -29,9 +30,10 @@ const Return = (props) => {
       .then(response =>{
         const respuesta = response.data;
         const auxDiffrenece = [], auxDate = [];
-        respuesta.map(elemento =>{
+        respuesta.map(elemento => {
           auxDiffrenece.push(elemento.Diffrenece);
           auxDate.push(elemento.Date);
+          return 'difference data'
         })
         setDiffrenece(auxDiffrenece);
         setDate(auxDate);
