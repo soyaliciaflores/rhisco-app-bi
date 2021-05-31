@@ -1,10 +1,15 @@
 import React, {Fragment} from 'react';
 
-const Sector = () => {
-    Sector ( 
+
+const Sectors = () => {
+  
+
+    return ( 
         <Fragment>
+            
+            
         </Fragment>
      );
 }
  
-export default Sector;
+export default Sectors;
