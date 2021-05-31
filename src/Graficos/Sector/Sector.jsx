@@ -66,4 +66,4 @@ const Sector = () => {
     );
 }
  
-export default Sectors;
+export default Sector;

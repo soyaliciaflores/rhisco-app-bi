@@ -1,11 +1,12 @@
-/* eslint-disable array-callback-return */
 import React, {Fragment, useState, useEffect} from 'react';
 import { Line } from 'react-chartjs-2'
 import axios from 'axios'
+// import FilterReturn from './FilterReturn';
 
 const Return = (props) => {
     const [Diffrenece, setDiffrenece] = useState([]);
     const [Date, setDate] = useState([]);
+    console.log(Date, Diffrenece)
     
     const data = {
       labels: props.lafecha,
@@ -20,16 +21,19 @@ const Return = (props) => {
     const opciones ={
       responsive: true,
       animations: false
-    }       
+        }
+
+           
   
     const peticionApi = async () =>{
       await axios.get('https://rhisco-89b36-default-rtdb-b52e2.firebaseio.com/.json')
       .then(response =>{
         const respuesta = response.data;
         const auxDiffrenece = [], auxDate = [];
-        respuesta.map(elemento =>{
+        respuesta.map(elemento => {
           auxDiffrenece.push(elemento.Diffrenece);
           auxDate.push(elemento.Date);
+          return 'difference data'
         })
         setDiffrenece(auxDiffrenece);
         setDate(auxDate);
