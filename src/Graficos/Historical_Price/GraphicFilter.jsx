@@ -18,7 +18,6 @@ const options = [
     }
 ]
 
-
 const GraphicFilter = () => {
 
     const [date, setDate] = useState([]);
@@ -27,9 +26,10 @@ const GraphicFilter = () => {
     const [historicalData, sethistoricalData] = useState();
 
     const data = {
+
         labels: date,
         datasets: [{
-            label: 'Low and High compare',
+            label: 'Close',
             data: close,
             fill: false,
             borderColor: 'rgb(225, 102, 0)',
@@ -41,7 +41,7 @@ const GraphicFilter = () => {
         await axios.get(api)
             .then(res => {
                 let answer = res.data
-                sethistoricalData(answer)            
+                sethistoricalData(answer)
             })
     }
     useEffect(() => {
@@ -66,12 +66,12 @@ const GraphicFilter = () => {
     const handleCargarAños = function (e) {
         const opcion = e.target.value
         setYear(opcion)
-        prueba(historicalData,year)
+        prueba(historicalData, year)
     }
 
     return (
         <Fragment>
-            <select name="categorias"
+            <select className="select-historical" name="categorias"
                 id="seCategorias"
                 onClick={handleCargarAños}>
                 <option> Seleccione un año</option>
@@ -86,3 +86,4 @@ const GraphicFilter = () => {
     )
 }
 export default GraphicFilter;
+

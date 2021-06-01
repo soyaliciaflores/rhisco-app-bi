@@ -1,0 +1,23 @@
+.App{
+    background-color: white;
+}
+.grapchis-Container {
+    display: flex;
+    
+}
+.graphics-right{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    width: 60%;
+    margin-top: 50px;
+}
+.graphics-left{
+    
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-right: 4%;
+    margin-left: 5%;
+    margin-top: 50px;
+}

@@ -2,7 +2,9 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios'
 import { Line } from 'react-chartjs-2'
+
 const api = 'https://rhisco-89b36-default-rtdb-4be8b.firebaseio.com/.json'
+
 const Graphics = () => {
 
     const [date, setDate] = useState([]);
@@ -27,7 +29,7 @@ const Graphics = () => {
                 let auxDate = [];
                 answer.map (item => {
 
-                    auxLow.push(item.Low)
+                    auxLow.push(item.Close)
                     auxDate.push(item.Date)
                 })
               setLow(auxLow);
@@ -41,14 +43,11 @@ const Graphics = () => {
 
     return (
         <Fragment>
-
-
-        <Line data={data}/>
-
-
-
+            <Line data={data}/>
         </Fragment>
     )
 }
 export default Graphics;
+
+
 

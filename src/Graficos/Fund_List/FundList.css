@@ -1,0 +1,32 @@
+.table-content{
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+.table-left{
+    display: flex;
+    flex-direction: column;
+width:50%;
+margin-top: 65px;
+font-size: 15px;
+}
+.table-right{
+    width: 50%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+.title{
+    width: 500px;
+}
+.title-table{
+    width: 360px;
+    height: 60px;
+    display: flex;
+    background-color: #042B62;
+    padding-left: 120px;
+  
+    color: white;
+    
+}

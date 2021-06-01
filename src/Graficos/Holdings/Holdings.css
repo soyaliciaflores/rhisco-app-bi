@@ -1,0 +1,10 @@
+.table{
+    width: 100%;
+}
+.tableContainer{
+    background-color: white;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    
+}
