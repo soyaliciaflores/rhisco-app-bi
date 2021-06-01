@@ -15,8 +15,7 @@ import './General/Header_Analista/HeaderAnalista.css'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 
