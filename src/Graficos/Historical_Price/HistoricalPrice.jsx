@@ -2,7 +2,8 @@ import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios'
 import DataTable from 'react-data-table-component'
 import GraphicFilter from './GraphicFilter'
-import Graphics from './Graphics'
+import './HistoricalPrice.css'
+//import Graphics from './Graphics'
 
 
 const columnas = [
@@ -65,8 +66,15 @@ const HistoricalPrice = () => {
                 data={data}
                 title='Historical Prices'
                 pagination
+                paginationPerPage={5}
+                paginationRowsPerPageOptions={[5, 15, 25, 50]}
+                paginationComponentOptions={{
+                    rowsPerPageText: 'Records per page:',
+                    rangeSeparatorText: 'out of',
+                }}
+
             />
-            <Graphics />
+            {/* <Graphics /> */}
             <GraphicFilter />
         </Fragment>
     );

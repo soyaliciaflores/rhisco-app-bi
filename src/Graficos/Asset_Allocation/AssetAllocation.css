@@ -1,4 +1,9 @@
 .graphic{
-    padding: 4px 4px 4px 4px;
     width: 100%;
+}
+.chartContainer{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 19px 50px;
 }
