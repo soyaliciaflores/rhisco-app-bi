@@ -1,0 +1,29 @@
+.main-container-navTable{
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  justify-content: left;
+}
+.button-navTable{
+    border-color: white;
+    background-color: #333333;
+    color: white;
+    border-radius: 0;
+    width: 16vh;
+    height: 6vh;
+    outline: none;
+}
+
+.button-nav:active { 
+    background: #c4c4c4; 
+    color: black; 
+  } 
+
+.button-nav:hover { 
+    background: #c4c4c4; 
+    color:black; 
+} 
+  .button-nav:focus { 
+    background: #c4c4c4; 
+    color:black; 
+  } 
