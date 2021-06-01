@@ -15,12 +15,13 @@ const AssetAllocation = () => {
         label: 'Asset Allocation',
         data: netAsset,
         backgroundColor: [
-          'rgb(0, 20, 20)',
-          'rgb(0,41,41)',
-          'rgb(0, 61, 61)',
-          'rgb(0,82,82)',
-          'rgb(142, 176, 176)',
-          'rgb()'
+          '#003232',
+          '#2C5D5D',
+          '#527E7E',
+          '#729999',
+          '#003232',
+          '#8BAFAF',
+          
         ],
       }]
     };
