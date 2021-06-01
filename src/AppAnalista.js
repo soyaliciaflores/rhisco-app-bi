@@ -63,11 +63,6 @@ function App() {
       <div className="rigthBoard">
         <div className="founList">
           <FundList />
-          <NavGraph />
-          <DiscretePerformance />
-          <NavTable />
-          <AssetAllocation />
-          <Sector />
         </div>
         <div className="renderGraphicsA">
           <div className="botonsA">
