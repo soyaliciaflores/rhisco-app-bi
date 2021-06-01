@@ -7,15 +7,10 @@ const DiscretePerformance = () => {
 
     const [Aegon,SetAegon] = useState([]);
     const [PNSpecialis, SetPNSpecialis] = useState([]);
-    const [DPData, SetDPData] = useState([]);
     const [Benchmark,SetBenchmark] = useState([]);
-
-    console.log(DPData)
-    console.log(Aegon)
-    console.log(PNSpecialis)
-    console.log(Benchmark)
-    
+  
     const data = {
+
       labels: Benchmark,
       datasets: [{
         label: 'Aegon Stability Pn AORt',
@@ -35,6 +30,7 @@ const DiscretePerformance = () => {
     };
 
     const getData = async () =>{
+
         await axios.get('https://rhisco-89b36-default-rtdb-2d767.firebaseio.com/.json')
         .then(response =>{
           let res = response.data;
@@ -47,8 +43,7 @@ const DiscretePerformance = () => {
             aegonStability.push(data.Aegon_Stability_Pn_AOR);
             benchmark.push(data.Benchmark);
           })
-
-          SetDPData(res)
+          
           SetPNSpecialis(pnSpecialist)
           SetAegon(aegonStability)
           SetBenchmark(benchmark)
@@ -61,7 +56,7 @@ const DiscretePerformance = () => {
     return ( 
 
         <Fragment>
-          <div className='graphic'>
+          <div className='graphicDP' style={{width:"100%"}}>
             <Line 
               data = {data}
             />

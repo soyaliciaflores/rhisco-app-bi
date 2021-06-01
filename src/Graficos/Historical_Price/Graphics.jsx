@@ -27,7 +27,7 @@ const Graphics = () => {
                 let auxDate = [];
                 answer.map (item => {
 
-                    auxLow.push(item.Low)
+                    auxLow.push(item.Close)
                     auxDate.push(item.Date)
                 })
               setLow(auxLow);
@@ -51,4 +51,6 @@ const Graphics = () => {
     )
 }
 export default Graphics;
+
+
 
