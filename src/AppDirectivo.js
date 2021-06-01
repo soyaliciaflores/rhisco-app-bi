@@ -83,7 +83,6 @@ function AppDirectivo() {
                 {showRegions === true ? <Regions/> : null}
                 {showSector === true ? <Sector/> : null}
                 {showBenchmark === true ? <DiscretePerformance/> : null}
-                
               </div>
             </div>
           </div>
