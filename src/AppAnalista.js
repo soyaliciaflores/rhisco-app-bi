@@ -21,9 +21,8 @@ function App() {
   const [showRegions, setshowRegions] = useState(false)
   const [showSector, setshowSector] = useState(false)
   const [showBenchmark, setshowBenchmark] = useState(false)
-  const [renderTable, setrenderTable] = useState({
-
-  })
+  const [holdingTable, setHoldingTable] = useState(true)
+  const [historyTable, sethistoryTable] = useState(false)
   
 
   const handleChangeAsset = () =>{
@@ -50,12 +49,14 @@ function App() {
     setshowSector(false)
     setshowBenchmark(true)
   }
-
-  const handleChangeTable = () => {
- 
+  const handleChangeHoldingTable = () => {
+    setHoldingTable(true)
+    sethistoryTable(false)
   }
-
-
+  const handleChangeHistoryTable = () => {
+    sethistoryTable(true)
+    setHoldingTable(false)
+  }
   return (
    
     <div className="executive">
@@ -92,10 +93,14 @@ function App() {
         </div>
         <div className="renderTables">
           <div className="bottonsB">
-            <NavTable  />
+            <NavTable 
+              handleChangeHoldingTable={handleChangeHoldingTable}
+              handleChangeHistoryTable={handleChangeHistoryTable}
+            />
           </div>
           <div className="tables">
-            <HistoricalPrice />
+            {holdingTable === true ? <Holdings /> : null}
+            {historyTable === true ? <HistoricalPrice /> : null}
           </div>
         </div>
       </div>

@@ -42,6 +42,7 @@ const columnas = [
 ]
 
 const api = 'https://rhisco-89b36-default-rtdb-4be8b.firebaseio.com/.json'
+
 const HistoricalPrice = () => {
 
 
