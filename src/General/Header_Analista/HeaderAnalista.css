@@ -1,0 +1,9 @@
+header {
+    width: 1800px;
+    display:flex;
+    flex-direction: row;
+}
+.containerAnalitic{
+    width: 100%;
+    
+}

@@ -3,10 +3,10 @@ import React, { Fragment } from 'react'
 const NavTable = () => {
     return (
         <Fragment>
-        <div className='main-container-nav'>
-            <button className='button-nav'>Holding</button>
-            <button className='button-nav'>History</button>
-            <button className='button-nav'>Return</button>
+        <div className='main-container-navTable'>
+            <button className='button-navTable'>Holding</button>
+            <button className='button-navTable'>History</button>
+            <button className='button-navTable'>Return</button>
         </div>
     </Fragment>
     )

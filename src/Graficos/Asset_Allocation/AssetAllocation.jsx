@@ -3,12 +3,12 @@ import { Pie } from 'react-chartjs-2'
 import axios from 'axios'
 
 const AssetAllocation = () => {
-
+  
     const [found,SetfoundType] = useState([]);
     const [netAsset, SetnetAssets] = useState([]);
-    const [assetsAlocationData, SetassetsAlocationData] = useState([]);
-    console.log(found, netAsset, assetsAlocationData);
-    
+  
+    // const [assetsAlocationData, SetassetsAlocationData] = useState([]);
+        
     const data = {
       labels: found,
       datasets: [{
@@ -22,7 +22,6 @@ const AssetAllocation = () => {
           'rgb(142, 176, 176)',
           'rgb()'
         ],
-
       }]
     };
     const options ={
@@ -44,7 +43,7 @@ const AssetAllocation = () => {
           })
           SetfoundType(foundType)
           SetnetAssets(netAssets)
-          SetassetsAlocationData(res)
+          // SetassetsAlocationData(res)
         })
     }
       useEffect(()=>{
@@ -53,14 +52,16 @@ const AssetAllocation = () => {
 
     return ( 
 
-        <Fragment>
-          <div className='graphic'>
-            <Pie 
-              data = {data}
-              options = {options}
-            />
-          </div>
-        </Fragment>
+      <Fragment>
+      <div className='graphic'>
+        <div className='chartContainer'> 
+          <Pie 
+            data = {data}
+            options = {options}
+          />
+        </div>
+      </div>
+    </Fragment>
     );
 }
  
