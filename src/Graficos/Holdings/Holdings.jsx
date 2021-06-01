@@ -89,41 +89,47 @@ const columns= [
             
         //   });
 
-          const customStyles = {
+          // const customStyles = {
             
-            rows: {
-              style: {
-                minHeight: '80px', // override the row height
-              }
-            },
-            headCells: {
-              style: {
-                paddingLeft: '8px', // override the cell padding for head cells
-                paddingRight: '8px',
+          //   rows: {
+          //     style: {
+          //       minHeight: '80px', // override the row height
+          //     }
+          //   },
+          //   headCells: {
+          //     style: {
+          //       paddingLeft: '8px', // override the cell padding for head cells
+          //       paddingRight: '8px',
                 
-              },
-            },
-            cells: {
-              style: {
-                paddingLeft: '8px', // override the cell padding for data cells
-                paddingRight: '8px',
-              },
-            },
-          };
+          //     },
+          //   },
+          //   cells: {
+          //     style: {
+          //       paddingLeft: '8px', // override the cell padding for data cells
+          //       paddingRight: '8px',
+          //     },
+          //   },
+          // };
 
     return ( 
         <Fragment>
-           <div className="tablePrueba">
-               <DataTable
-               columns={columns}
-               data={data}
-               title= 'Holdings'
-               center
-               theme="holdingsGreen"
-               customStyles={customStyles}
-               allowOverflow
-               
-               />
+           <div className="tableHoldings">
+            <div className="tableContainer">
+                <DataTable
+                columns={columns}
+                data={data}
+                title= 'Holdings'
+                center
+                pagination
+                paginationPerPage={5}
+                paginationRowsPerPageOptions={[1, 1, 1]}
+                paginationComponentOptions={{
+                rowsPerPageText: 'Records per page:',
+                rangeSeparatorText: 'out of',
+        }}
+                
+                />
+              </div>
            </div>
         </Fragment>
      );
