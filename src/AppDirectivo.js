@@ -61,7 +61,7 @@ function AppDirectivo() {
   return (
     <div className="executive">
       <div className="header">
-        <img src={hDir} alt='header de Directivo' className='HeaderImage'/>
+        <img src={hDir} alt='header de Directivo' className='headerImage' width='100%'/>
       </div>
       <div className="dashboard">
         <div className="rigthBoard">
