@@ -1,12 +1,10 @@
 import React from 'react'
-import hAnalitic from '../../Assets/hAnalitic.png'
+import h_analist from '../../Assets/h_analitic.png'
 
 export default function HeaderAnalista() {
     return (
-        <div className='hAnalitic'>
-            <header className='containerAnalitic'>
-                <img src={hAnalitic} alt="hAnalitic" />
-            </header>
+        <div>
+            <img src={h_analist} alt="headerDir" />
         </div>
     )
 }
