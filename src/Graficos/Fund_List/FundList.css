@@ -31,3 +31,10 @@ font-size: 15px;
     color: white;
     
 }
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    
+}
