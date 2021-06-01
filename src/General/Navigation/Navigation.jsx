@@ -5,18 +5,18 @@ import {Link} from 'react-router-dom'
 
 const Navigation = () => {
     return (
-        <div className='main-container'>
+        <div className='main-container-navigation'>
             
-            <img src={rhisco_blackout_logo} alt='logo de Rhisco'/>
+            <img className='image-navigation'src={rhisco_blackout_logo} alt='logo de Rhisco'/>
             
 
-            <div className='container-buttons'>
+            <div className='container-buttons-navigation'>
                 <Link to='/directivo'>
-            <button className='dir-analyst-button'>Directivo</button>
+            <button className='dir-analyst-button-navig'>Directivo</button>
                 </Link>
 
             <Link to='/analista'>
-                <button className='dir-analyst-button'>Analista</button>
+                <button className='dir-analyst-button-navig'>Analista</button>
             </Link>
             </div>
             
