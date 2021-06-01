@@ -12,20 +12,10 @@ import hDir from './Assets/hDirective.png';
 
 function AppDirectivo() {
 
-  // const [renderGraphic, setrenderGraphic] = useState({
-  //   assetsAllocation:true,
-  //   regions:false,
-  //   sector:false,
-  //   Benchmark:false
-  // })
-
   const [showAssets, setshowAssets] = useState(true)
   const [showRegions, setshowRegions] = useState(false)
   const [showSector, setshowSector] = useState(false)
   const [showBenchmark, setshowBenchmark] = useState(false)
-  const [renderTable, setrenderTable] = useState({
-
-  })
   
 
   const handleChangeAsset = () =>{
@@ -53,11 +43,6 @@ function AppDirectivo() {
     setshowBenchmark(true)
   }
 
-  const handleChangeTable = () => {
- 
-  }
-
- 
   return (
     <div className="executive">
       <div className="header">
