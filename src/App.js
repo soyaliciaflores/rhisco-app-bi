@@ -7,6 +7,7 @@ import './General/Navigation/NavGraph.css'
 import './General/Navigation/NavTable.css'
 import './Graficos/Sector/Sector.css';
 import './Graficos/Asset_Allocation/AssetAllocation.css'
+import '../src/AppDirectivo.css'
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,10 +22,10 @@ function App() {
     <Fragment>
       <Router>
         <Link to = '/analista'>
-        <button>Analista</button>
+        {/* <button>Analista</button> */}
         </Link>
         <Link to = '/directivo'>
-        <button>Directivo</button>
+        {/* <button>Directivo</button> */}
         </Link>
         <Switch>
           <Route path = '/directivo'>

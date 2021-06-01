@@ -1,0 +1,79 @@
+.executive{
+    justify-content: center;
+    height: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.header{
+    justify-content: center;
+}
+.headerImage{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row ;
+    justify-content: center;
+    height: 100vh;
+    width: 100vh;
+}
+.dashboard{
+    display: flex;
+}
+.rigthBoard{
+    margin: 5px 5px;
+
+    padding: 10px;
+    width: 35%;
+}
+.founList{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: white;
+    display: flex;
+    height: 347px;
+}
+.renderGraphicsA{
+    margin-top: 26px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: white;
+}
+.pieGraphics{
+    padding: 25px 4px 4px 4px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.botonsA{
+  
+}
+.pieGraphics{
+
+
+}
+.leftBoard{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 10px;
+    width: 65%;
+}
+.renderGraphicB{
+    
+    padding: 10px;
+    margin: 5px 5px;
+    background-color: white
+}
+.renderTables{
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 10px;
+    margin-top:10px
+}
+.bottonsB{
+
+}
+.tables{
+
+    padding: 10px;
+}

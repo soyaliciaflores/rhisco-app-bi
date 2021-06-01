@@ -50,47 +50,54 @@ useEffect(()=>{
   return (
     <Fragment>
       <div className='main-container'> 
-     <div >
-       <div className='container-selects'>
-         <div className='style-select'>
-         <div className='cont-title-select'><p>Fecha incial</p></div>
-        <select className='selects' onChange={(e) => {
-      onChangeMonth1(e);
-    }}>
-        {datos && datos.map((d,i)=> (
-        <option className='options' key={i} value={d.Date}> 
-        {d.Date}
-        </option> ))}
-      </select>
-      </div>
-      <div className='style-select'>
-        <div className='cont-title-select'><p>Fecha final</p></div>
-      <select className='selects' onChange={(e) => {
-      onChangeMonth2(e);
-    }}>
-        {datos && datos.map((d, i)=> (
-        <option className='options' key={i} value={d.Date}> 
-        {d.Date}
-        </option> ))}
-      </select>
-      </div>
-      <button className='button-return'onClick={handleGetIndex}>Ir</button>
-      <div className='entry'>
-        <div><span>Entry:</span>
-        <p>{datos && datos[0].Entry}</p></div>
-        <div><span>Size:</span>
-        <p>{datos && datos[0].Size}</p></div>
-        
-        </div>
-      </div>
-      
-      {/* <p>{rangoDate}</p>
-      <p>{rangoDiff}</p> */}
+        <div >
+          <div className='container-selects'>
+            <div className='style-select'>
+              <div className='cont-title-select'><p>Fecha incial</p></div>
+                <select className='selects' onChange={(e) => {
+                  onChangeMonth1(e);
+                }}>
+                  {datos && datos.map((d, i) => (
+                    <option className='options' key={i} value={d.Date}>
+                      {d.Date}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div className='style-select'>
+
+                <div className='cont-title-select'>
+                  <p>Fecha final</p>
+                </div>
+
+                <select className='selects' onChange={(e) => {
+                  onChangeMonth2(e);
+                }}>
+
+                {datos && datos.map((d, i)=> (
+                  <option className='options' key={i} value={d.Date}> 
+                    {d.Date}
+                  </option> 
+                ))}
+
+                </select>
+              </div>
+              <button className='button-return'onClick={handleGetIndex}>Ir</button>
+              <div className='entry'>
+                <div className='divText'>
+                  <span className='enttrySize'>Entry:</span>
+                  <p className= 'enttrySize'>{datos && datos[0].Entry}</p>
+                </div>
+                <div className='divText'><span className='enttrySize'>Size:</span>
+                  <p className= 'enttrySize'>{datos && datos[0].Size}</p>
+                </div>
+              </div>
+            </div>
           </div>
-    </div> 
-        <div className='main-container-graph'><Return lafecha={rangoDate}
-          ladiferencia={rangoDiff} /></div>
-          
+        </div> 
+      <div className='main-container-graph'><Return lafecha={rangoDate}
+          ladiferencia={rangoDiff} />
+      </div>     
     </Fragment>
   );
 }

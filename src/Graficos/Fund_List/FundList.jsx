@@ -2,6 +2,7 @@ import React, {Fragment, useEffect, useState} from 'react';
 import '../../App.css';
 import axios from 'axios'
 import DataTable from 'react-data-table-component';
+
 // import dbreturn from '../../ArchivosJSON/Return.json'
 const columnas = [
     {
