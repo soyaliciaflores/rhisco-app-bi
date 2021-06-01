@@ -1,12 +1,11 @@
 import React, { Fragment } from 'react'
 
-const NavTable = () => {
+const NavTable = ({handleChangeHoldingTable, handleChangeHistoryTable}) => {
     return (
         <Fragment>
         <div className='main-container-navTable'>
-            <button className='button-navTable'>Holding</button>
-            <button className='button-navTable'>History</button>
-            <button className='button-navTable'>Return</button>
+            <button className='button-navTable' onClick={() => handleChangeHoldingTable()} >Holding</button>
+            <button className='button-navTable' onClick={() => handleChangeHistoryTable()} >History</button>
         </div>
     </Fragment>
     )

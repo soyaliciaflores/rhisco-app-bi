@@ -1,13 +1,15 @@
 import React from 'react'
-// import headerdirectivo from '../../Assets/headerdirectivo.png'
 
 
-export default function HeaderDirectivo() {
+function HeaderDirectivo({HeaderAnalistaIMG}) {
+
     return (
-        
         <div className="headerDir">
-            {/* <img src={headerdirectivo} alt="headerdirectivo" /> */}
-            
+
+           <div className="header">
+                <img src={HeaderAnalistaIMG} alt='header' className='headerHeaderAnalistaIMG' width='100%'/>
+            </div>   
         </div>
     )
 }
+export default HeaderDirectivo
