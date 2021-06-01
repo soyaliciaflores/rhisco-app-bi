@@ -1,4 +1,4 @@
-body{
+/* body{
     background-position: center top;
 }
 .main-container{
@@ -40,15 +40,16 @@ body{
 .container-buttons{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     width: 32vh;
-}
-.logo-container{
+},
+.logo-container
+{
     width: 16vh;
     height: 10vh;
 }
-img{
+img
+{
     margin-bottom: 8vh;
     width: 60vh;
     height: 30vh;
-}
+} */
