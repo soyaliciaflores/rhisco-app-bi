@@ -52,14 +52,16 @@ const AssetAllocation = () => {
 
     return ( 
 
-        <Fragment>
-          <div className='graphic'>
-            <Pie 
-              data = {data}
-              options = {options}
-            />
-          </div>
-        </Fragment>
+      <Fragment>
+      <div className='graphic'>
+        <div className='chartContainer'> 
+          <Pie 
+            data = {data}
+            options = {options}
+          />
+        </div>
+      </div>
+    </Fragment>
     );
 }
  
