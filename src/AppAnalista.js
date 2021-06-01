@@ -1,19 +1,15 @@
 import React, {useState} from 'react';
 import FundList from './Graficos/Fund_List/FundList';
-//import DiscretePerformance from './Graficos/Discrete_Performance/DiscretePerformance';
+import DiscretePerformance from './Graficos/Discrete_Performance/DiscretePerformance';
 import AssetAllocation from './Graficos/Asset_Allocation/AssetAllocation';
 import HistoricalPrice from './Graficos/Historical_Price/HistoricalPrice';
 import Holdings from './Graficos/Holdings/Holdings';
 import NavGraph from './General/Navigation/NavGraph';
 import HeaderAnalista from './General/Header_Analista/HeaderAnalista';
-//import NavTable from './General/Navigation/NavTable';
-import './AppAnalista.css';
+import NavTable from './General/Navigation/NavTable';
 import Regions from './Graficos/Regions/Regions';
 import Sector from './Graficos/Sector/Sector';
-import DiscretePerformance from './Graficos/Discrete_Performance/DiscretePerformance';
-import NavTable from './General/Navigation/NavTable';
-
-//import Sector from './Graficos/Sector/Sector';
+import './AppAnalista.css';
 
 function App() {
 
@@ -67,6 +63,11 @@ function App() {
       <div className="rigthBoard">
         <div className="founList">
           <FundList />
+          <NavGraph />
+          <DiscretePerformance />
+          <NavTable />
+          <AssetAllocation />
+          <Sector />
         </div>
         <div className="renderGraphicsA">
           <div className="botonsA">

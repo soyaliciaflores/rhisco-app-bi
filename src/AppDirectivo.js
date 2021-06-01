@@ -14,13 +14,6 @@ import HistoricalPrice from './Graficos/Historical_Price/HistoricalPrice';
 
 function AppDirectivo() {
 
-  // const [renderGraphic, setrenderGraphic] = useState({
-  //   assetsAllocation:true,
-  //   regions:false,
-  //   sector:false,
-  //   Benchmark:false
-  // })
-
   const [showAssets, setshowAssets] = useState(true)
   const [showRegions, setshowRegions] = useState(false)
   const [showSector, setshowSector] = useState(false)
@@ -57,12 +50,12 @@ function AppDirectivo() {
     setHoldingTable(true)
     sethistoryTable(false)
   }
+  
   const handleChangeHistoryTable = () => {
     sethistoryTable(true)
     setHoldingTable(false)
   }
 
- 
   return (
     <div className="executive">
       <div className="header">

@@ -52,10 +52,8 @@ const columns= [
     const dataAPI ='https://rhisco-89b36-default-rtdb-holdings.firebaseio.com/.json'
     
     const Holdings = () => {
-    
-    
         const [data, setData] = useState([]);
-        console.log(data)
+        
         const apiRequest = async () => {
             await axios.get(dataAPI)
                 .then(res => {

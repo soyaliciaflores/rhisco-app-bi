@@ -8,8 +8,6 @@ const Regions = () => {
     const [allocations, Setallocation] = useState([]);
     const [regionsData, SetregionsData] = useState([]);
 
-    console.log(region,allocations,regionsData);
-
     const data = {
       labels: region,
       datasets: [{
