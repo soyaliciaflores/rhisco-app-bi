@@ -13,6 +13,7 @@
     height: 6vh;
     outline: none;
 }
+
 .button-nav:active { 
     background: #c4c4c4; 
     color: black; 
