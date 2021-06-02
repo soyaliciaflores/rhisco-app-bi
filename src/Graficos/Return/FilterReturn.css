@@ -24,13 +24,14 @@
 }
 .style-select{
     display: flex;
-    width: 37vh;
+    width: 32vh;
     height: 6vh;
     background-color: #c4c4c4;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    font-size: 13px;
 }
 .cont-title-select{
     height: 4vh;
@@ -58,7 +59,7 @@
 }
 .entry{
     background-color: white;
-    width: 36vh;
+    width: 38vh;
     outline: none;
     height: 5vh;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
