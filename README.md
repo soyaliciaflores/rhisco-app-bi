@@ -2,7 +2,7 @@
 
 ###  Antecedentes y contexto
 
-![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/rhisco_blackout_logo.png)
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/rhisco_blackout_logo.png?raw=true)
 
 [Rhisco](https://rhisco.com/) es una empresa de tecnología que ofrece servicios y soluciones de capital a bancos y aseguradoras de primer y segundo nivel en  todo el mundo. 
 Con el uso de la innovación, la creatividad y la tecnología, desarrolla soluciones integrales para sus clientes, como Tegra,  una plataforma de integración para el análisis de riesgo y capital. 
@@ -20,7 +20,7 @@ En esta primera versión, la web app no se conectará aún a la plataforma Tegra
 Como se menciona anteriormente, desde el momento del diseño del prototipado se pensó en la escalabilidad del proyecto por lo que las decisiones que se tomaron para la elección del stack tecnológico incorporado, siempre fueron basadas en esa premisa de que sea un proyecto escalable.
 
 #### Firebase
-![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Firebase.JPG)
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Firebase.JPG?raw=true)
 Para almacenar la información y consumirla, utilizamos el servicio de Realtime database de [Firebase](https://firebase.google.com/?hl=es), un servidor que provee Google mediante una base de datos en tiempo real, back-end y organizada en forma de árbol JSON. Mediante este servicio, la aplicación está sincronizada y almacenada en la nube de Firebase. La base de datos está siendo consumida a través de una REST API e integrada mediante la librería de JavaScript React js.
 La REST API utiliza el protocolo SSE (del inglés Server-Sent Events), el cual es una API para crear conexiones de HTTP para recibir notificaciones push de un servidor.
 
@@ -41,7 +41,7 @@ Esta es una librería pensada para facilitar el consumo de servicios web, API RE
 
 #### Chart.js
 
-![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Graphics.gif)
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Graphics.gif?raw=true)
 Uno de los requerimientos más importantes para el desarrollo de nuestra aplicación se enfoca en la experiencia de usuario y en el desarrollo de la interfaz de usuario, por lo que la elección de la librería que ayudó a crear los gráficos, fue imprescindible.  Ese es el motivo por el que este proyecto se construyó con ayuda de Chart.js, la cual es altamente compatible con React y permite crearlas a partir de los datos que se le pasan. De esta forma, se generan una serie de gráficos con un buen aspecto visual y con diseño responsive, lo que al final se traduce en  un buen aspecto de la interfaz y con múltiples opciones de diseño y elección de color, que ayudaron a cumplir con el objetivo final de esta webApp.
 
 #### Datatable
@@ -62,7 +62,7 @@ Cada una tomó una responsabilidad dentro del armado, sin descartar que todas de
 #### Sobre la creación del prototipo
 Conocimos a los integrantes de Rhisco, con quienes se trabajó y quienes nos ayudaron a entender mejor la problemática y a compartirnos de manera general, una introducción a los principales conceptos que manejan en los temas de inteligencia de negocios y finanzas.
 
-![](foto del equipo)
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Rhisco%20(1).png?raw=true)
 
 La data fue recibida en archivos con extensión .csv, que es un formato muy parecido a las tablas de excel, sin embargo, para poder alojarla en el servidor de Firebase, cambiamos el formato de la misma a archivos .json. 
 La data que fue entregada por Rhisco, para el desarrollo de este MVP, corresponde a una simulación de la información que manejan en Rhisco, por lo que trabajamos con datos simulados pero muy parecidos a los que se manejan en el día a día de la empresa.
@@ -70,8 +70,9 @@ Después de tener los datos, platicar con la empresa y conocer el problema más 
 Posteriormente, se eligió la paleta de colores, respetando la identidad gráfica de la empresa y se diseñó en Figma la primera propuesta de prototipo de alta fidelidad, haciendo la propuesta de elección de colores y tipografía.
 Recibimos feedback del equipo Rhisco, principalmente en el acomodo de las gráficas y en la interpretación de la data de manera que cada gráfica que se renderizara, fuera la mejor opción de acuerdo al tipo de información que se estaba manejando. 
 
-![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Captura%20de%20pantalla%202021-06-01%20213452.png)
-![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Captura%20de%20pantalla%202021-06-01%20214031.png)
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Captura%20de%20pantalla%202021-06-01%20213452.png?raw=true)
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Captura%20de%20pantalla%202021-06-01%20214031.png?raw=true)
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Captura%20de%20pantalla%202021-06-01%20211559.png?raw=true)
 
 Trabajamos para incorporar el feedback que recibimos de la empresa a una nueva propuesta de dashboards, donde  se diseñaron las interfaces de analista y de director, incorporando las tablas y los gráficos que le interesan a cada perfil. 
 
@@ -87,9 +88,13 @@ Se trabajó en las gráficas que requirieron algún filtrado y posteriormente co
  #### Los estilos
 Ya con la funcionalidad de cada una de las tablas y gráficas, alimentadas con la data de la API, se trabajó para unir el trabajo de todas en una sola versión. El trabajar mediante componentes, ayudó a que este paso no fuera complicado, debido a que cada una contaba desde el inicio con los archivos creados en donde trabajaría sus componentes y en esta etapa, se trabajó para jalar cada uno de los componentes en una sola vista de interfaz, la de directivo o la de analista, según fuera el caso.
 Lo siguiente fue la aplicación de estilos a cada uno de los componentes que estaban viviendo dentro de las interfaces de los dashboards, por lo que se trabajó de manera conjunta para lograr eso, apoyadas con el plugin de LiveShare que tiene disponible Visual Studio Code, se trabajó al mismo tiempo manipulando el mismo archivo, cada una desde sus computadoras. 
-
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Captura%20de%20Pantalla%202021-06-01%20a%20la(s)%2022.23.57.png?raw=true)
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Captura%20de%20Pantalla%202021-06-01%20a%20la(s)%2022.24.09.png?raw=true)
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Captura%20de%20Pantalla%202021-06-01%20a%20la(s)%2022.24.28.png?raw=true)
 
 A la par, se trabajó en la maquetación de la interfaz de home, que da la bienvenida y en darle funcionalidad de ruteo a los botones.
+
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Captura%20de%20pantalla%202021-06-01%20211559.png?raw=true)
 
 
 Con lo anteriormente trabajado, se  volvió a hacer un git push y un merge a la rama principal, para que quedara una sola versión, se probó si el código no se había roto y se arreglaron los pequeños detalles que surgieron por haberlo unido. Ya con esa versión del trabajo del equipo completo, cada una la bajó para que todas continuaran trabajando con la versión actualizada. 
@@ -104,5 +109,5 @@ En el transcurso del día se trabajó por sprints de dos o tres horas (el tiempo
 
 #### Sobre el hackaton
 El squad de trabajo estuvo conformado por seis mujeres: [Alicia](https://github.com/soyaliciaflores), [Andrea](https://github.com/AndreVivs), [Daniela](https://github.com/aleinadrh), [Karina](https://github.com/KarinaKanoDev), [Liliana](https://github.com/ravalidesign) y [Mariliz](https://github.com/Maariliz) quienes trabajamos durante 4 días en toda la propuesta que aquí se presenta, desde el prototipado de baja fidelidad, hasta obtener el MVP y los integrantes de la empresa, quienes participaron activamente dándonos el feedback necesario y proporcionandonos la información necesaria cuando la requeríamos.
-![](foto del equipo)
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Captura%20de%20Pantalla%202021-06-01%20a%20la(s)%2017.52.26.png?raw=true)
 En todo el proceso, en el squad se trabajó mediante la metodología agil de Scrum, por lo que cada mañana se realizó un daily, contestando las preguntas: ¿Qué hice ayer?, ¿Qué voy a hacer hoy? y ¿Qué impedimentos o bloqueos tengo?, esto permitió que todas las mañanas al incio del día, los integrantes de Rhisco conocieran los avances, el plan del día pero sobre todo, los bloqueos que estábamos teniendo para ese día, y si estaba en sus manos ayudarnos a desbloquear el problema, lo hacían en el momento.
