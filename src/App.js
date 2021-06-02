@@ -24,13 +24,13 @@ function App() {
     <Fragment>
       <Router>
         <Switch>
-          <Route path = '/directivo'>
+          <Route path = '/executive'>
             <AppDirectivo/>
           </Route>
-          <Route path = '/analista'>
+          <Route path = '/analyst'>
             <AppAnalista/>
           </Route>
-          <Route path = '/'>
+          <Route path = '/' exact>
             <Navigation/>
           </Route>
         </Switch>

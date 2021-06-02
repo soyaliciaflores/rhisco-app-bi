@@ -81,13 +81,13 @@ const GraphicFilter = () => {
 
         <Fragment>
 
-            <h3> Evolución de precios </h3>
+            <h3> Price evolution </h3>
 
             <select className="select-historical" name="categorias"
 
                 id="seCategorias"
                 onClick={handleCargarAños}>
-                <option> Seleccione un año</option>
+                <option> Select year </option>
 
                 {
                     options.map((item, i) => (

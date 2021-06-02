@@ -66,7 +66,7 @@ const onChangeMonth1 = (e)=>{
         <div>
           <div className='container-selects'>
             <div className='style-select'>
-              <div className='cont-title-select'><p>Fecha incial</p></div>
+              <div className='cont-title-select'><p>Initial date</p></div>
 
                 <select className='selects' onChange={(e) => {
 
@@ -87,7 +87,7 @@ const onChangeMonth1 = (e)=>{
               <div className='style-select'>
 
                 <div className='cont-title-select'>
-                  <p>Fecha final</p>
+                  <p>End date</p>
                 </div>
 
                 <select className='selects' onChange={(e) => {
@@ -108,7 +108,7 @@ const onChangeMonth1 = (e)=>{
 
               </div>
 
-              <button className='button-return'onClick={handleGetIndex}>Ir</button>
+              <button className='button-return'onClick={handleGetIndex}>Go</button>
               
               <div className='entry'>
                 <div className='divText'>
