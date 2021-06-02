@@ -1,5 +1,5 @@
 import React from 'react'
-import hAnalitic from '../../Assets/hDirective.png'
+import hAnalitic from '../../Assets/hAnalitic.png'
 
 export default function HeaderAnalista() {
     return (
