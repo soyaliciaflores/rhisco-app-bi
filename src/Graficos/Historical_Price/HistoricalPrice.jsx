@@ -3,8 +3,6 @@ import axios from 'axios'
 import DataTable from 'react-data-table-component'
 import GraphicFilter from './GraphicFilter'
 import './HistoricalPrice.css'
-//import Graphics from './Graphics'
-
 
 const columnas = [
     {
@@ -45,15 +43,16 @@ const api = 'https://rhisco-89b36-default-rtdb-4be8b.firebaseio.com/.json'
 
 const HistoricalPrice = () => {
 
-
     const [data, setData] = useState([]);
 
     const peticionApi = async () => {
+        
         await axios.get(api)
             .then(res => {
                 setData(res.data)
             })
-    }
+    };
+
     useEffect(() => {
         peticionApi();
     }, [])
@@ -63,6 +62,7 @@ const HistoricalPrice = () => {
 
         <Fragment>
             <DataTable
+
                 columns={columnas}
                 data={data}
                 title='Historical Prices'
@@ -70,15 +70,16 @@ const HistoricalPrice = () => {
                 paginationPerPage={5}
                 paginationRowsPerPageOptions={[5, 15, 25, 50]}
                 paginationComponentOptions={{
+
                     rowsPerPageText: 'Records per page:',
                     rangeSeparatorText: 'out of',
-                }}
 
-            />
-            {/* <Graphics /> */}
+                }}
+                />
+
             <GraphicFilter />
         </Fragment>
     );
-}
+};
 
 export default HistoricalPrice;

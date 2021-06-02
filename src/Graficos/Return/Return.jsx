@@ -8,17 +8,19 @@ const Return = (props) => {
 
       labels: props.lafecha,
       datasets:[{ 
+
         label: "Diference",
         borderColor: "#E46C0A",
         borderWidth: 5,
         data: props.ladiferencia
+        
       }]
-    }
+    };
 
     const opciones = {
       responsive: true,
       animations: false
-    }
+    };
 
     const peticionApi = async () =>{
 
@@ -35,24 +37,28 @@ const Return = (props) => {
             auxDate.push(elemento.Date);
             return 'difference data'
 
-          })
-      })
-    }
+          });
+      });
+    };
   
     useEffect(()=>{
       peticionApi();
-    },[])
+    },[]);
   
     return ( 
 
       <Fragment>
+
         <div className='generalContainer'>
           <div className="graphicReturn" style={{width:"99%"}}>
+
             <Line data={data} options={opciones} />
+
           </div>
         </div>
+
       </Fragment>
     );
-}
+};
  
 export default Return;

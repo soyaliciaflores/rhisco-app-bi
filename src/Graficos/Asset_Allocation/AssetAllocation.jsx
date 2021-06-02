@@ -6,10 +6,9 @@ const AssetAllocation = () => {
   
     const [found,SetfoundType] = useState([]);
     const [netAsset, SetnetAssets] = useState([]);
-  
-    // const [assetsAlocationData, SetassetsAlocationData] = useState([]);
-        
+       
     const data = {
+
       labels: found,
       datasets: [{
         label: 'Asset Allocation',
@@ -24,45 +23,55 @@ const AssetAllocation = () => {
         ],
       }]
     };
+
     const options ={
       maintainAspectRadio: false,
       responsive: true
-    }
+    };
 
-    const getData = async () =>{
+    // Obtención de la data de la gráfica Assets Allocation alojada en Firebase
+    const getData = async () => {
+
         await axios.get('https://rhisco-89b36-default-rtdb.firebaseio.com/.json')
         .then(response =>{
+
           let res = response.data;
           const foundType = [];
           const netAssets = [];
           res.map(item => { 
+
             return(
               foundType.push(item.Type),
               netAssets.push(item.Netassets)
-            )
-          })
+            );
+
+          });
+
           SetfoundType(foundType)
           SetnetAssets(netAssets)
-          // SetassetsAlocationData(res)
-        })
-    }
+
+        });
+    };
+
       useEffect(()=>{
+
         getData();
-      },[])
+        
+      },[]);
 
     return ( 
 
       <Fragment>
-      <div className='graphic'>
-        <div className='chartContainer'> 
-          <Pie 
-            data = {data}
-            options = {options}
-          />
+        <div className='graphic'>
+          <div className='chartContainer'> 
+            <Pie 
+              data = {data}
+              options = {options}
+            />
+          </div>
         </div>
-      </div>
-    </Fragment>
+      </Fragment>
     );
-}
+};
  
 export default AssetAllocation;

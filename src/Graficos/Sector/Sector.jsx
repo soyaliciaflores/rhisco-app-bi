@@ -3,15 +3,15 @@ import { Pie } from 'react-chartjs-2'
 import axios from 'axios'
 
 const Sector = () => {
+
     const [sectors,Setsector] = useState([]);
     const [netAsset, SetnetAssets] = useState([]);
-    const [sectorData, SetsectorData] = useState([]);
-
-    console.log(sectors,netAsset,sectorData);
 
     const data = {
+
       labels: sectors,
       datasets: [{
+
         label: 'Asset netAssets',
         data: netAsset,
         backgroundColor: [
@@ -28,10 +28,12 @@ const Sector = () => {
 
       }]
     };
+
     const options ={
+      
       maintainAspectRadio: false,
       responsive: true
-    }
+    };
 
     const getData = async () =>{
         await axios.get('https://rhisco-89b36-default-rtdb-e7e3f.firebaseio.com/.json')
@@ -47,23 +49,29 @@ const Sector = () => {
           })
           Setsector(sector)
           SetnetAssets(netAssets)
-          SetsectorData(res)
+
         })
-    }
+    };
+
       useEffect(()=>{
         getData();
-      },[])
+      },[]);
 
-    return ( 
+    return (
+
         <Fragment>
+
           <div className='graphic'>
+
             <Pie 
               data = {data}
               options = {options}
             />
+
           </div>
+
         </Fragment>
     );
-}
+};
  
 export default Sector;

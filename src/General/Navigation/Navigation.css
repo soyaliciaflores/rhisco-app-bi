@@ -1,30 +1,33 @@
-/* body{
-    background-position: center top;
-}
-.main-container{
+/*Estilo de la pantalla de navegación inicial*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+.main-container-navigation{
     display: flex;
     height: 100vh;
-    width: 218vh;
     background: url(../../Assets/backgroundNavigation.jpeg);
     justify-content: center;
     flex-direction: column;
     align-items: center;
     background-size: cover;
 }
-.dir-analyst-button{
-    background-color:white;
-    opacity:  .4;
+
+.dir-analyst-button-navig{
+    background-color: white;
+    opacity: .4;
     border-radius: 12px;
     border: none;
-    width: 32vh;
-    height: 12vh;
+    width: 28vh;
+    height: 9vh;
     outline: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     margin: 2vh;
     align-items: center;
-    font-size: 6vh;
+    font-size: 4vh;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
 }
-.dir-analyst-button:hover{
+
+.dir-analyst-button-navig:hover{
     background-color:white;
     opacity:  .6;
     border-radius: 12px;
@@ -35,21 +38,17 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 2vh;
     align-items: center;
-    font-size: 6vh;
+    font-size: 5vh;
 }
-.container-buttons{
+
+.container-buttons-navigation{
     display: flex;
     flex-direction: column;
     width: 32vh;
-},
-.logo-container
-{
-    width: 16vh;
-    height: 10vh;
 }
-img
-{
+
+.image-navigation{
     margin-bottom: 8vh;
     width: 60vh;
     height: 30vh;
-} */
+}

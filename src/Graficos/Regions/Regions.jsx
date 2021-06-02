@@ -11,6 +11,7 @@ const Regions = () => {
     console.log(region,allocations,regionsData);
 
     const data = {
+
       labels: region,
       datasets: [{
         label: 'Asset Allocation',
@@ -29,40 +30,48 @@ const Regions = () => {
     const options ={
       maintainAspectRadio: false,
       responsive: true
-    }
+    };
 
     const getData = async () =>{
+
+      //URL para obtener la date de la gráfica de Regions
         await axios.get('https://rhisco-89b36-default-regions-data.firebaseio.com/.json')
         .then(response =>{
+
           let res = response.data;
           const regions = [];
           const allocation = [];
           res.map(item => { 
+
             return(
               regions.push(item.Region),
               allocation.push(item.Allocation)
             )
-          })
+          });
+
           Setregions(regions)
           Setallocation(allocation)
           SetregionsData(res)
-        })
-    }
+        });
+    };
+
       useEffect(()=>{
         getData();
-      },[])
+      },[]);
 
     return ( 
 
         <Fragment>
+
           <div className='graphic'>
             <Pie 
               data = {data}
               options = {options}
             />
           </div>
+
         </Fragment>
     );
-}
+};
  
 export default Regions;
