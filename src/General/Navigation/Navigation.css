@@ -37,10 +37,10 @@
 .container-buttons-navigation{
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between; */
     width: 32vh;
 }
 .image-navigation{
     margin-bottom: 8vh;
     width: 60vh;
     height: 30vh;
-}
