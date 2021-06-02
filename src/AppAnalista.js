@@ -17,8 +17,8 @@ function App() {
   const [showRegions, setshowRegions] = useState(false)
   const [showSector, setshowSector] = useState(false)
   const [showBenchmark, setshowBenchmark] = useState(false)
-  const [holdingTable, setHoldingTable] = useState(true)
-  const [historyTable, sethistoryTable] = useState(false)
+  const [holdingTable, setHoldingTable] = useState(false)
+  const [historyTable, sethistoryTable] = useState(true)
   
 
   const handleChangeAsset = () =>{
