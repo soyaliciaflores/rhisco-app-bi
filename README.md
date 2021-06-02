@@ -2,7 +2,7 @@
 
 ###  Antecedentes y contexto
 
-![](link de logo de rhisco)
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/rhisco_blackout_logo.png)
 
 [Rhisco](https://rhisco.com/) es una empresa de tecnología que ofrece servicios y soluciones de capital a bancos y aseguradoras de primer y segundo nivel en  todo el mundo. 
 Con el uso de la innovación, la creatividad y la tecnología, desarrolla soluciones integrales para sus clientes, como Tegra,  una plataforma de integración para el análisis de riesgo y capital. 
@@ -20,7 +20,7 @@ En esta primera versión, la web app no se conectará aún a la plataforma Tegra
 Como se menciona anteriormente, desde el momento del diseño del prototipado se pensó en la escalabilidad del proyecto por lo que las decisiones que se tomaron para la elección del stack tecnológico incorporado, siempre fueron basadas en esa premisa de que sea un proyecto escalable.
 
 #### Firebase
-![](link de la consola de Firebase)
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Firebase.JPG)
 Para almacenar la información y consumirla, utilizamos el servicio de Realtime database de [Firebase](https://firebase.google.com/?hl=es), un servidor que provee Google mediante una base de datos en tiempo real, back-end y organizada en forma de árbol JSON. Mediante este servicio, la aplicación está sincronizada y almacenada en la nube de Firebase. La base de datos está siendo consumida a través de una REST API e integrada mediante la librería de JavaScript React js.
 La REST API utiliza el protocolo SSE (del inglés Server-Sent Events), el cual es una API para crear conexiones de HTTP para recibir notificaciones push de un servidor.
 
@@ -40,7 +40,8 @@ Para realizar la petición de la data al servidor utilizamos la librería [axios
 Esta es una librería pensada para facilitar el consumo de servicios web, API REST que devuelvan datos JSON, ofreciendo una API unificada para las solicitudes [AJAX](https://developer.mozilla.org/es/docs/Glossary/AJAX ).
 
 #### Chart.js
-![](imagen de una de las graficas )
+
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Graphics.gif)
 Uno de los requerimientos más importantes para el desarrollo de nuestra aplicación se enfoca en la experiencia de usuario y en el desarrollo de la interfaz de usuario, por lo que la elección de la librería que ayudó a crear los gráficos, fue imprescindible.  Ese es el motivo por el que este proyecto se construyó con ayuda de Chart.js, la cual es altamente compatible con React y permite crearlas a partir de los datos que se le pasan. De esta forma, se generan una serie de gráficos con un buen aspecto visual y con diseño responsive, lo que al final se traduce en  un buen aspecto de la interfaz y con múltiples opciones de diseño y elección de color, que ayudaron a cumplir con el objetivo final de esta webApp.
 
 #### Datatable
@@ -52,7 +53,7 @@ Para la organización del trabajo colaborativo, ocupamos Git y GitHub. [Git](htt
 Dado que nos sentimos cómodas trabajando con Git y GitHub decidimos llevar la gestión del proyecto de Rhisco aquí. Cada una de las integrantes tuvimos la oportunidad de trabajar en tareas específicas y al culminar con esta, se subían los aportes a GitHub, donde la persona encargada buscaba integrar todos los aportes de las demas, siguiendo buenas prácticas, permitiendo que todas tuvieran la versión más actualizada y seguir trabajando con una buena comunicación tanto verbal como en código.
 
 #### Figma
- [Figma] (https://www.figma.com/ ) es un editor de gráficos vectorial y una herramienta de generación de prototipos. Está pensada para trabajarse desde el navegador, sin embargo, también existen aplicaciones para sistema operativo IOS y para Windows. Decidimos usar esta plataforma debido a su  versatilidad para prototipar para diferentes pantallas, así como las diferentes opciones que ofrece para crear los distintos componentes de nuestra interfaz de usuario. Además, existen plugins que ayudan a desarrollar partes específicas del prototipado con mayor facilidad. Tal es el caso de Figpie que fue de mucha utilidad para prototipar las gráficas de Pie.
+ [Figma](https://www.figma.com/ ) es un editor de gráficos vectorial y una herramienta de generación de prototipos. Está pensada para trabajarse desde el navegador, sin embargo, también existen aplicaciones para sistema operativo IOS y para Windows. Decidimos usar esta plataforma debido a su  versatilidad para prototipar para diferentes pantallas, así como las diferentes opciones que ofrece para crear los distintos componentes de nuestra interfaz de usuario. Además, existen plugins que ayudan a desarrollar partes específicas del prototipado con mayor facilidad. Tal es el caso de Figpie que fue de mucha utilidad para prototipar las gráficas de Pie.
  
  #### Dinámica de trabajo
  Para la construcción de este producto tecnológico, se trabajó de manera organizada con un squad técnico de seis egresadas de Laboratoria, quienes antes de la entrega de la información, realizaron reuniones previas para organizarse y conocer cuáles eran los puntos fuertes de cada una y qué es lo que podría aportar.
@@ -61,7 +62,7 @@ Cada una tomó una responsabilidad dentro del armado, sin descartar que todas de
 #### Sobre la creación del prototipo
 Conocimos a los integrantes de Rhisco, con quienes se trabajó y quienes nos ayudaron a entender mejor la problemática y a compartirnos de manera general, una introducción a los principales conceptos que manejan en los temas de inteligencia de negocios y finanzas.
 
-![](foto del primer día)
+![](foto del equipo)
 
 La data fue recibida en archivos con extensión .csv, que es un formato muy parecido a las tablas de excel, sin embargo, para poder alojarla en el servidor de Firebase, cambiamos el formato de la misma a archivos .json. 
 La data que fue entregada por Rhisco, para el desarrollo de este MVP, corresponde a una simulación de la información que manejan en Rhisco, por lo que trabajamos con datos simulados pero muy parecidos a los que se manejan en el día a día de la empresa.
@@ -69,7 +70,8 @@ Después de tener los datos, platicar con la empresa y conocer el problema más 
 Posteriormente, se eligió la paleta de colores, respetando la identidad gráfica de la empresa y se diseñó en Figma la primera propuesta de prototipo de alta fidelidad, haciendo la propuesta de elección de colores y tipografía.
 Recibimos feedback del equipo Rhisco, principalmente en el acomodo de las gráficas y en la interpretación de la data de manera que cada gráfica que se renderizara, fuera la mejor opción de acuerdo al tipo de información que se estaba manejando. 
 
-![](imagenes de prototipo)
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Captura%20de%20pantalla%202021-06-01%20213452.png)
+![](https://github.com/soyaliciaflores/rhisco-app-bi/blob/alice/src/Assets/Captura%20de%20pantalla%202021-06-01%20214031.png)
 
 Trabajamos para incorporar el feedback que recibimos de la empresa a una nueva propuesta de dashboards, donde  se diseñaron las interfaces de analista y de director, incorporando las tablas y los gráficos que le interesan a cada perfil. 
 
