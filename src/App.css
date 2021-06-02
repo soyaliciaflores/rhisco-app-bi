@@ -69,3 +69,23 @@
         width: 531px;
     }
 } */
+
+/* @media screen and (max-width: 414px){
+
+    .rigthBoard {
+        margin: 5px 5px;
+        padding: 10px;
+        width: 35%;
+        display: none;
+    }
+    .leftBoard {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        display: flex;
+        padding: 2px;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        width: -webkit-fill-available;
+    }
+} */
