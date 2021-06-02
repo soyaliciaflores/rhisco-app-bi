@@ -1,0 +1,9 @@
+/*CSS Dde la gráfica de Assets Allocation*/
+.graphic{
+    width: 100%;
+}
+.chartContainer{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}

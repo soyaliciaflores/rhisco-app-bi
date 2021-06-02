@@ -1,0 +1,53 @@
+.executive{
+    justify-content: center;
+    height: 100px;
+    margin-left: 25px;
+    margin-right: 5px;
+}
+.header{
+    justify-content: center;
+}
+.dashboard{
+    display: flex;
+}
+.rigthBoard{
+    margin: 5px 5px;
+    padding: 10px;
+    width: 35%;
+}
+.renderGraphicsA{
+    margin-top: 26px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: white;
+}
+.pieGraphics{
+    padding: 5px 4px 4px 4px;
+    display: flex;
+    justify-content: center;
+}
+.leftBoard{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 10px;
+    width: 65%;
+}
+.renderGraphicB{
+    padding: 10px;
+    margin: 5px 5px;
+    background-color: white
+}
+.renderTables{
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 10px;
+    margin-top: 25px;
+}
+.tables{
+    background-color: white;
+    padding: 1%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: 1%;
+}

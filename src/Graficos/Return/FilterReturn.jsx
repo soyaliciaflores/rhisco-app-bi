@@ -3,6 +3,7 @@ import axios from 'axios'
 import Return from './Return'
 
 function FilterReturn() {
+
     const [index1, setIndex1] = useState();
     const [index2, setIndex2] = useState();
     const [rangoDate, setRangoDate] = useState(["01/02/22", "02/02/22", "03/02/22", "06/02/22", "07/02/22", "08/02/22", "09/02/22", "10/02/22", "13/02/22", "14/02/22", "15/02/22", "16/02/22", "17/02/22", "20/02/22", "21/02/22", "22/02/22", "23/02/22", "24/02/22"]);
@@ -11,87 +12,125 @@ function FilterReturn() {
     const [datos, setDatos] = useState();
   
     const peticionApi = async () =>{
+
         await axios.get('https://rhisco-89b36-default-rtdb-b52e2.firebaseio.com/.json')
         .then(response =>{
+
           var respuesta = response.data;
           setDatos(respuesta)
-         } )
-}
+
+        });
+    };
 
 const handleGetIndex = ()=>{
+
     const arrDate = []
     const arrDiff = []
+
     for(let i = index1 ; i <= index2 ; i++){
       arrDate.push(datos[i].Date)
       arrDiff.push(datos[i].Diffrenece);
-    }
+    };
+
     setRangoDate(arrDate)
     setRangoDiff(arrDiff)
-  }
+
+}
 
 const onChangeMonth1 = (e)=>{
+
     const selectedId = e.target.value;
     const selectedObject = datos.filter((d,index) =>d.Date===selectedId)[0]
     const indice1 = datos.indexOf(selectedObject)
     setIndex1(indice1)
 
-  }
+};
+
   const onChangeMonth2 = (e)=>{
+
     const selectedId = e.target.value;
     const selectedObject = datos.filter((d) =>d.Date===selectedId)[0]
     const indice2 = datos.indexOf(selectedObject)
     setIndex2(indice2)
-}
+};
 
-useEffect(()=>{
+  useEffect(()=>{
     peticionApi();
-  })
+  });
 
   return (
+
     <Fragment>
+
       <div className='main-container'> 
-     <div >
-       <div className='container-selects'>
-         <div className='style-select'>
-         <div className='cont-title-select'><p>Fecha incial</p></div>
-        <select className='selects' onChange={(e) => {
-      onChangeMonth1(e);
-    }}>
-        {datos && datos.map((d,i)=> (
-        <option className='options' key={i} value={d.Date}> 
-        {d.Date}
-        </option> ))}
-      </select>
-      </div>
-      <div className='style-select'>
-        <div className='cont-title-select'><p>Fecha final</p></div>
-      <select className='selects' onChange={(e) => {
-      onChangeMonth2(e);
-    }}>
-        {datos && datos.map((d, i)=> (
-        <option className='options' key={i} value={d.Date}> 
-        {d.Date}
-        </option> ))}
-      </select>
-      </div>
-      <button className='button-return'onClick={handleGetIndex}>Ir</button>
-      <div className='entry'>
-        <div><span>Entry:</span>
-        <p>{datos && datos[0].Entry}</p></div>
-        <div><span>Size:</span>
-        <p>{datos && datos[0].Size}</p></div>
-        
-        </div>
-      </div>
-      
-      {/* <p>{rangoDate}</p>
-      <p>{rangoDiff}</p> */}
+        <div>
+          <div className='container-selects'>
+            <div className='style-select'>
+              <div className='cont-title-select'><p>Fecha incial</p></div>
+
+                <select className='selects' onChange={(e) => {
+
+                  onChangeMonth1(e);
+                }}>
+                  
+                  {datos && datos.map((d, i) => (
+
+                    <option className='options' key={i} value={d.Date}>
+                      {d.Date}
+                    </option>
+
+                  ))};
+
+                </select>
+
+              </div>
+              <div className='style-select'>
+
+                <div className='cont-title-select'>
+                  <p>Fecha final</p>
+                </div>
+
+                <select className='selects' onChange={(e) => {
+
+                  onChangeMonth2(e);
+
+                }}>
+
+                {datos && datos.map((d, i)=> (
+
+                  <option className='options' key={i} value={d.Date}> 
+                    {d.Date}
+                  </option> 
+
+                ))}
+
+                </select>
+
+              </div>
+
+              <button className='button-return'onClick={handleGetIndex}>Ir</button>
+              
+              <div className='entry'>
+                <div className='divText'>
+                  <span className='enttrySize'>Entry:</span>
+                  <p className= 'enttrySize'>{datos && datos[0].Entry}</p>
+                </div>
+                <div className='divText'><span className='enttrySize'>Size:</span>
+                  <p className= 'enttrySize'>{datos && datos[0].Size}</p>
+                </div>
+              </div>
+            </div>
           </div>
-    </div> 
-        <div className='main-container-graph'><Return lafecha={rangoDate}
-          ladiferencia={rangoDiff} /></div>
-          
+        </div> 
+
+      <div className='main-container-graph'><Return lafecha={rangoDate}
+
+          ladiferencia={rangoDiff} />
+
+      </div>     
+
     </Fragment>
   );
-}
+};
+
 export default FilterReturn;

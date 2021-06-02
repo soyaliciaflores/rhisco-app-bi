@@ -1,0 +1,70 @@
+/* @media only screen and (max-width: 1920px) {
+
+    .table-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+    }
+
+    .founList {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: white;
+    display: flex;
+    height: 42%;
+    width: 101%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -50p;
+    margin-right: -37px;
+    }
+    .renderGraphicsA {
+        margin-top: 26px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        display: flex;
+        padding: 10px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: white;
+        width: 77%;
+    }
+    .leftBoard {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        padding: 10px;
+        width: 58%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .rigthBoard {
+        margin: 5px 5px;
+        padding: 10px;
+        width: 29%;
+    }
+    .leftBoard {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        padding: 10px;
+        width: 64%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .selects {
+        width: 20vh;
+        height: 3vh;
+        outline: none;
+        border: none;
+    }
+    .renderGraphicsA {
+        margin-top: 26px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        display: flex;
+        padding: 10px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: white;
+        width: 531px;
+    }
+} */
