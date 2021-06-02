@@ -29,6 +29,7 @@ const GraphicFilter = () => {
 
         labels: date,
         datasets: [{
+
             label: 'Close',
             data: close,
             fill: false,
@@ -38,12 +39,16 @@ const GraphicFilter = () => {
     };
 
     const peticionApi = async () => {
+
         await axios.get(api)
+
             .then(res => {
+
                 let answer = res.data
                 sethistoricalData(answer)
             })
-    }
+    };
+
     useEffect(() => {
         peticionApi();
     }, [])
@@ -52,7 +57,9 @@ const GraphicFilter = () => {
 
         let auxDate = [];
         let auxClose = [];
+
         const filtrado = datos.filter(date => date.Date.includes(año))
+
         filtrado.map(item => {
 
             auxDate.push(item.Date)
@@ -64,27 +71,36 @@ const GraphicFilter = () => {
         setClose(auxClose);
     }
     const handleCargarAños = function (e) {
+
         const opcion = e.target.value
         setYear(opcion)
         prueba(historicalData, year)
     }
 
     return (
+
         <Fragment>
+
             <h3> Evolución de precios </h3>
+
             <select className="select-historical" name="categorias"
+
                 id="seCategorias"
                 onClick={handleCargarAños}>
                 <option> Seleccione un año</option>
+
                 {
                     options.map((item, i) => (
                         <option key={'categoria' + i}>{item.years}</option>
                     ))
                 }
+
             </select>
+
             <Line data={data} />
+
         </Fragment>
     )
-}
-export default GraphicFilter;
+};
 
+export default GraphicFilter;

@@ -7,10 +7,10 @@ const Navigation = () => {
             <img className='image-navigation'src={rhisco_blackout_logo} alt='logo de Rhisco'/>
             <div className='container-buttons-navigation'>
                 <Link to='/directivo'>
-            <button className='dir-analyst-button-navig'>Directivo</button>
+            <button className='dir-analyst-button-navig'> Executive </button>
                 </Link>
             <Link to='/analista'>
-                <button className='dir-analyst-button-navig'>Analista</button>
+                <button className='dir-analyst-button-navig'> Analyst </button>
             </Link>
             </div>
         </div>

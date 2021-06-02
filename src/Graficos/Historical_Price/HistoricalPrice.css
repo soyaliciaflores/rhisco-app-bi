@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
-
 .select-historical{
+  
     border-color: white;
     background-color: #333333;
     color: white;
@@ -15,20 +15,3 @@
     font-size: 14px;
     padding-left: 20px;
 }
-.select-historical:active { 
-    background: #c4c4c4; 
-    color: black; 
-    padding: 4vh;
-  } 
-
-.select-historical:hover { 
-    padding: 4vh; 
-    background: #c4c4c4; 
-    color:black; 
-  } 
-  .select-nav:focus { 
-    background: #c4c
-                    4c4; 
-    color:black; 
-  } 
-
