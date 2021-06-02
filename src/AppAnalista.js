@@ -62,12 +62,9 @@ function App() {
     <div className="dashboard">
       <div className="rigthBoard">
         <div className="founList">
-          <FundList />
-          <NavGraph />
-          <DiscretePerformance />
-          <NavTable />
-          <AssetAllocation />
-          <Sector />
+          <div className="foundListContainer">
+            <FundList />
+            </div>
         </div>
         <div className="renderGraphicsA">
           <div className="botonsA">

@@ -71,6 +71,7 @@ const GraphicFilter = () => {
 
     return (
         <Fragment>
+            <h3> Evolución de precios </h3>
             <select className="select-historical" name="categorias"
                 id="seCategorias"
                 onClick={handleCargarAños}>
