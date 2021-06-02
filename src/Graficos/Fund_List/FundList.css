@@ -19,7 +19,6 @@ font-size: 15px;
 }
 .title{
     width: 500px;
-    
 }
 .title-table{
     width: 360px;
@@ -29,5 +28,12 @@ font-size: 15px;
     padding-left: 120px;
   
     color: white;
+    
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
     
 }

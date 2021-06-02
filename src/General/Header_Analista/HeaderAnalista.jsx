@@ -3,9 +3,9 @@ import hAnalitic from '../../Assets/hAnalitic.png'
 
 export default function HeaderAnalista() {
     return (
-        <div className='hAnalitic'>
-            <header className='containerAnalitic'>
-                <img src={hAnalitic} alt="hAnalitic" />
+        <div className='headerDir'>
+            <header className='header'>
+                <img src={hAnalitic} alt="hAnalitic" width='100%' />
             </header>
         </div>
     )

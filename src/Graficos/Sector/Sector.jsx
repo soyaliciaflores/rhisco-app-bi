@@ -7,8 +7,6 @@ const Sector = () => {
     const [netAsset, SetnetAssets] = useState([]);
     const [sectorData, SetsectorData] = useState([]);
 
-    console.log(sectors,netAsset,sectorData);
-
     const data = {
       labels: sectors,
       datasets: [{
