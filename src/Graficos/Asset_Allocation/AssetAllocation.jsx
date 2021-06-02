@@ -1,16 +1,18 @@
+/* eslint-disable array-callback-return */
 import React, {Fragment, useEffect, useState} from 'react';
 import { Pie } from 'react-chartjs-2'
 import axios from 'axios'
 
 const AssetAllocation = () => {
   
-    const [found,SetfoundType] = useState([]);
+    const [fund,SetfoundType] = useState([]);
     const [netAsset, SetnetAssets] = useState([]);
-       
+      
     const data = {
 
-      labels: found,
+      labels: fund,
       datasets: [{
+
         label: 'Asset Allocation',
         data: netAsset,
         backgroundColor: [
@@ -20,7 +22,6 @@ const AssetAllocation = () => {
           '#729999',
           '#003232',
           '#8BAFAF',
-          
         ],
       }]
     };
@@ -47,7 +48,6 @@ const AssetAllocation = () => {
             );
 
           });
-
           SetfoundType(foundType)
           SetnetAssets(netAssets)
 

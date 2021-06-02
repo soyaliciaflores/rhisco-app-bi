@@ -49,50 +49,33 @@ const GraphicFilter = () => {
     const prueba = (datos, year) => { // ''
         let auxDate = [];
         let auxClose = [];
-<<<<<<< HEAD
         const filtrado = datos.filter(date => date.Date.includes(year)) // '
         filtrado.forEach(item => {
-=======
-
-        const filtrado = datos.filter(date => date.Date.includes(año))
-
-        filtrado.map(item => {
-
->>>>>>> df722d22cae8c269db1699a7cae753e43fe68b9a
             auxDate.push(item.Date)
             auxClose.push(item.Close)
         })
         setDate(auxDate);
         setClose(auxClose);
     }
-<<<<<<< HEAD
-    const handleCargarAños =  (e) => {
-        const selectedYear = e.target.value
-        prueba(historicalData, selectedYear) // ''
-=======
     const handleCargarAños = function (e) {
 
         const opcion = e.target.value
         setYear(opcion)
         prueba(historicalData, year)
->>>>>>> df722d22cae8c269db1699a7cae753e43fe68b9a
     }
     return (
 
         <Fragment>
 
-            <h3> Evolución de precios </h3>
+            <h3> Price evolution </h3>
 
             <select className="select-historical" name="categorias"
 
                 id="seCategorias"
                 onClick={handleCargarAños}>
-<<<<<<< HEAD
-                <option> Select the year</option>
-=======
-                <option> Seleccione un año</option>
+      
+                <option> Select year </option>
 
->>>>>>> df722d22cae8c269db1699a7cae753e43fe68b9a
                 {
                     options.map((item) => (
                         <option key={'categoria_' + item.years}>{item.years}</option>
@@ -100,19 +83,9 @@ const GraphicFilter = () => {
                 }
 
             </select>
-<<<<<<< HEAD
-            <Line data={data} options={opciones}/>
-        </Fragment>
-    )
-}
-export default GraphicFilter;
-=======
 
             <Line data={data} />
 
         </Fragment>
     )
 };
-
-export default GraphicFilter;
->>>>>>> df722d22cae8c269db1699a7cae753e43fe68b9a
